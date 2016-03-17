@@ -28,9 +28,9 @@
                     <div class="container-fluid">
                          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
-                                <li><a href="index.html">EXERCISE 3</a></li>
-                                <li><a href="mandatory1.html">MANDATORY 1</a></li>
-                                <li class="active"><a href="mandatory2.html">MANDATORY 2 <span class="sr-only">(current)</span></a></li>
+                                <li><a href="index.html">SHIFT CIPHER</a></li>
+                                <li><a href="mandatory1.html">VIGENERE CIPHER</a></li>
+                                <li class="active"><a href="mandatory2.html">GCD <span class="sr-only">(current)</span></a></li>
                             </ul>
                          </div>
                     </div>
@@ -40,35 +40,28 @@
 
             <div class="container container-fluid">
                 <div class="row">
+                    <h1 class="page-header">GCD</h1>
                     <div class="col-md-12">
                         <form action="#" class="calculateForm form-inline">
                             <div class="form-group">
                                 <div class="input-group">
-                                    <div class="input-group-addon">MESSAGE: </div>
-                                    <textarea rows="16" class="form-control" style="width: 465px;" id="decMessage"></textarea>
+                                    <div class="input-group-addon">1: </div>
+                                    <input type="text" class="form-control" style="width: 465px;" id="formOne" />
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="input-group">
-                                    <div class="input-group-addon">RESULT: </div>
-                                    <textarea rows="16" class="form-control" style="width: 465px;" id="decDecripted"></textarea>
+                                    <div class="input-group-addon">2: </div>
+                                    <input type="text" class="form-control" style="width: 465px;" id="formTwo" />
                                 </div>
                             </div><br /><br />
                             <div class="form-group">
                                 <div class="input-group">
-                                    <div class="input-group-addon">KEY: </div>
-                                    <input type="text" class="form-control" id="decKey" />
+                                    <div class="input-group-addon">RESULT: </div>
+                                    <input type="text" style="width: 465px;" class="form-control" id="formResult" />
                                 </div>
                             </div>
-                            <button class="btn btn-danger" id="calculate"> DECRIPT</button>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="radio" name="action" id="decriptMessage" checked="checked"> Decript
-                                </label><br />
-                                <label>
-                                    <input type="radio" name="action" id="encriptMessage"> Encript
-                                </label>
-                            </div>
+                            <button class="btn btn-danger" id="calculate"> CALC</button>
                        </form>
                     </div>
                 </div>
@@ -76,7 +69,7 @@
             <br />
             <footer>
                 <p>
-                    &copy; Copyright  by Petko Petkov
+                    &copy; Copyright  by Petko Petkov & Minko Todorov
                 </p>
             </footer>
         </div>
