@@ -18,6 +18,7 @@
         <link rel="apple-touch-icon" href="/apple-touch-icon.png"/ >-->
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link rel="stylesheet" href="css/bootstrap-theme.css" />
+        <link rel="stylesheet" href="css/style.css" />
     </head>
 
     <body>
@@ -27,9 +28,9 @@
                     <div class="container-fluid">
                          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav">
-                                <li class="active"><a href="index.html">EXERCISE 3 <span class="sr-only">(current)</span></a></li>
-                                <li><a href="mandatory1.html">MANDATORY 1</a></li>
-                                <li><a href="mandatory2.html">MANDATORY 2</a></li>
+                                <li class="active"><a href="index.html">SHIFT CIPHER <span class="sr-only">(current)</span></a></li>
+                                <li><a href="mandatory1.html">VIGENERE CIPHER</a></li>
+                                <li><a href="mandatory2.html">GCD</a></li>
                             </ul>
                          </div>
                     </div>
@@ -39,32 +40,41 @@
 
             <div class="container container-fluid">
                 <div class="row">
+                    <h1 class="page-header">SHIFT CIPHER</h1>
                     <div class="col-md-12">
                         <form action="#" class="calculateForm form-inline">
                             <div class="form-group">
                                 <div class="input-group">
-                                    <div class="input-group-addon">Message to encript: </div>
-                                    <textarea rows="25" class="form-control" style="width: 405px;" id="decMessage"></textarea>
+                                    <div class="input-group-addon">MESSAGE: </div>
+                                    <textarea rows="16" class="form-control" style="width: 465px;" id="decMessage"></textarea>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="input-group">
-                                    <div class="input-group-addon">Decripted message: </div>
-                                    <textarea rows="25" class="form-control" style="width: 405px;" id="decDecripted"></textarea>
+                                    <div class="input-group-addon">RESULT: </div>
+                                    <textarea rows="16" class="form-control" style="width: 465px;" id="decDecripted"></textarea>
                                 </div>
                             </div><br /><br />
                             <div class="form-group">
                                 <div class="input-group">
-                                    <div class="input-group-addon">Message key: </div>
-                                    <input type="text" class="form-control" id="decKey" />
+                                    <div class="input-group-addon">KEY: </div>
+                                    <input value="0" type="number" class="form-control" id="decKey" />
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-danger" id="calculate">CALCULATE</button>
+                            
+                            <div class="checkbox">
+                                <label>
+                                    <input type="radio" name="action" id="decriptMessage" checked="checked"> DECRYPT
+                                </label><br />
+                                <label>
+                                    <input type="radio" name="action" id="encriptMessage"> ENCRYPT
+                                </label>
+                            </div>
                        </form>
                     </div>
                 </div>
             </div>
-            <br /><br /><br />
+            <br />
             <footer>
                 <p>
                     &copy; Copyright  by Petko Petkov & Minko Todorov
