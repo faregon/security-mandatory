@@ -33,7 +33,7 @@ $(document).on("ready", function () {
             if ($("#decriptMessage").is(":checked")) {
                 $("#calculate").text("ENCRYPT");
 
-                for (var i = 0; i < messageLength; i++) {
+                for (var i = 0; i < messageLength - 1; i++) {
                     decriptedSegment[i] = ((find(alphabet, messageArray[i]) + find(alphabet, keyVal[i])) % 26);
                 }
 

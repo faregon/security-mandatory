@@ -8,10 +8,10 @@ $(document).on("ready", function () {
         var result = "";
 
         if ($.isNumeric(first) && $.isNumeric(second)) {
-            var x = parseInt(first, 10);
-            var y = parseInt(second, 10);
+            var x = parseInt(first);
+            var y = parseInt(second);
 
-            result = calculateGCD(x, y).toString(10);
+            result = calculateGCD(x, y);
             $("#formResult").val(result);
         } else {
             $("#formResult").val("WRITE A NUMBER!");
