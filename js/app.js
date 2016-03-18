@@ -1,3 +1,7 @@
+  function handleChange(input) {
+    if (input.value < 0) input.value = 0;
+    if (input.value > 26) input.value = 26;
+  }
 $(document).on("ready", function () {
 
     // event handler on change for the form

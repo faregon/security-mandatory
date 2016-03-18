@@ -58,13 +58,13 @@
                             <div class="form-group">
                                 <div class="input-group">
                                     <div class="input-group-addon">KEY: </div>
-                                    <input value="0" type="number" class="form-control" id="decKey" />
+                                    <input value="0" type="number" class="form-control" id="decKey" onchange="handleChange(this);"/>
                                 </div>
                             </div>
                             
                             <div class="checkbox">
                                 <label>
-                                    <input type="radio" name="action" id="decriptMessage" checked="checked"> ENCRYPT
+                                    <input type="radio" name="action" id="decriptMessage" checked="checked" > ENCRYPT
                                 </label><br />
                                 <label>
                                     <input type="radio" name="action" id="encriptMessage">  DECRYPT
